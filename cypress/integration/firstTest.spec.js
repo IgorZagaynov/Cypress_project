@@ -26,7 +26,12 @@ it('By Tag value', () => {
     cy.get('[name="pass"]')
 });
 
-it.only('By different Tags', () => {
+it('By different Tags', () => {
+    cy.visit("http://www.facebook.com/")
+    cy.get('[data-testid=open-registration-form-button][role="button"]')
+});
+
+it('By different Tags', () => {
     cy.visit("http://www.facebook.com/")
     cy.get('[data-testid=open-registration-form-button][role="button"]')
 });
