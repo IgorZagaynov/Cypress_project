@@ -31,7 +31,7 @@ it('By different Tags', () => {
     cy.get('[data-testid=open-registration-form-button][role="button"]')
 });
 
-it('By different Tags', () => {
+it.only('By different Tags', () => {
     cy.visit("http://www.facebook.com/")
     cy.get('[data-testid=open-registration-form-button][role="button"]')
 });
